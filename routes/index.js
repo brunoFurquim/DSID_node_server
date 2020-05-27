@@ -35,7 +35,7 @@ var db = {
   }
 
 router.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
+    res.send({"status": true});
 });
 
 router.get('/users', (req, res, next) => {
