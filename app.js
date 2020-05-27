@@ -15,4 +15,4 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(mainRoutes);
 
 
-app.listen(4000);
+app.listen(process.env.PORT || 5000)
